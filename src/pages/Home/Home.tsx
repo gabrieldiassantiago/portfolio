@@ -5,6 +5,9 @@ import {Icons} from '../../Components/IconesTopo/index';
 import {Container, Logo, LogoText, TextTopo, TextDescription, Text} from './style';
 import gabriel from '../../assets/gabriel.jpg';
 
+
+const texto = "Um designer e programador que ama ilustrar e criar coisas incríveis através do códugo"
+
 function obterhora  ()  {
   let h = new Date().getHours();
   if (h <= 5) return 'Boa madrugada'
@@ -19,7 +22,7 @@ function obterhora  ()  {
         <Container>
           <Logo src={gabriel} alt="" />
           <Text>Olá, {obterhora()}</Text>
-            <TextTopo>Um designer UI/UX que adora programar, ilustrar e <br></br> criar coisas incríveis com o código</TextTopo>
+            <TextTopo>{texto}</TextTopo>
             <Icons />
             <TextDescription>ACESSE MEUS LINKS</TextDescription>
             <Button />
