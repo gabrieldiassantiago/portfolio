@@ -1,5 +1,7 @@
 import { TextFooter } from "./style"
-const gab = "https://github.com/"
+const gab = "https://www.instagram.com/_dias17y/"
+
+
 function Fotter () {
     return (
         <div>
