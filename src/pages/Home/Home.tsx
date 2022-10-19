@@ -6,7 +6,7 @@ import {Container, Logo, LogoText, TextTopo, TextDescription, Text} from './styl
 import gabriel from '../../assets/gabriel.jpg';
 
 
-const texto = "Um designer e programador que ama ilustrar e criar coisas incríveis através do códugo"
+const texto = "Um designer e programador que ama ilustrar, codar e criar coisas incríveis através do código"
 
 function obterhora  ()  {
   let h = new Date().getHours();
