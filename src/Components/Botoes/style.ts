@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Botao = styled.a`
     width: 538px;
     height: 40px;
+    font-family: 'Roboto';
     background: #FFFFFF;
     padding: 8px 16px 8px 8px;
     gap: 10px;
@@ -34,22 +35,29 @@ export const Botao = styled.a`
     }
 `
 export const Icon = styled.img`
-    width: 40px;
-    height: 40px;
     margin-left: 8px;
+    justify-content: flex-end;
+    justify-items: flex-end;
     
 `
-export const Arrow = styled.img`
-    margin-left: 350px;
+export const Arrow = styled.img`    
+    margin-left: auto;
+    margin-bottom: 0;
     width: 24px;
+    justify-content: flex-end;
+    justify-items: flex-end;
     @media (max-width: 576px){
         width: 24px;
-        margin-left: 110px;
+        margin-left: autos;
 
-        
-       
-    }
     :hover{
         stroke: white;
+    }
+`
+
+export const Container = styled.div`
+    svg{
+        width: 20px;
+        height: 20px;
     }
 `

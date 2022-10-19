@@ -8,11 +8,12 @@ export const Icon = styled.img`
     justify-content: center;
     margin: 32px 32px 0;
     @media (max-width: 576px){
-        margin: 30px 31px 0
+      margin: 20px 20px 0;
+        
     }
 
 `
 export const ContainerBar = styled.div`
-    margin-left: 32px;
+    margin-left: 50px;
     margin: 0;
 `

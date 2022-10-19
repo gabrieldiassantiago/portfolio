@@ -1,26 +1,30 @@
-import { Botao, Icon, Arrow } from './style';
-const globo: string = require("../../assets/globo.svg").default;
-const arrow: string = require("../../assets/arrow.svg").default;
-const write: string = require("../../assets/write.svg").default;
-const newsletter: string = require("../../assets/newsletter.svg").default;
-const shop: string = require("../../assets/shop.svg").default;
-const sobre: string = require("../../assets/sobre.svg").default;
+import { Botao, Icon, Arrow, Container } from './style';
+import { FaFacebookF, FaGithub, FaInstagram, FaWhatsapp} from 'react-icons/fa';
+import React from 'react';
 
-interface SVGProps {
-    color: string;
-  }
+const arrow: string = require("../../assets/arrow.svg").default;
 
 function Button () {
     return (
         <div>
-        <div>
-        <Botao href="https://facebook.com.br"> <Icon src={globo}/>Meu site <Arrow src={arrow}/></Botao>
-        <Botao href="https://facebook.com.br"> <Icon src={write}/>Meu site <Arrow src={arrow}/></Botao>
-        <Botao href="https://facebook.com.br"> <Icon src={newsletter}/>Meu site <Arrow src={arrow}/></Botao>
-        <Botao href="https://facebook.com.br"> <Icon src={shop}/>Meu site <Arrow src={arrow}/></Botao>
-        <Botao href="https://facebook.com.br"> <Icon src={sobre}/>Meu site <Arrow src={arrow}/></Botao>
-
-        </div>
+        <Container>
+        <Botao href="https://www.facebook.com/gabrieldiassantiago09/"> 
+        <Icon />
+        <FaFacebookF/>Facebook<Arrow src={arrow}/>
+        </Botao>
+        <Botao href="https://www.instagram.com/_dias17y/">
+        <Icon />
+        <FaInstagram/>Instagram<Arrow src={arrow}/>
+        </Botao>
+        <Botao href="https://whatsapp.com">
+        <Icon />
+        <FaWhatsapp />WhatsApp <Arrow src={arrow} />
+        </Botao>
+        <Botao href="https://github.com/gabrieldiassantiago">
+        <Icon />
+        <FaGithub/>Github <Arrow src={arrow} />    
+        </Botao>
+        </Container>
         </div>
     )
 }

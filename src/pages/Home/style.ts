@@ -16,27 +16,29 @@ export const Container = styled.div`
     }
 `
 export const Logo = styled.img`
+    border-radius: 90px;
 `
 export const LogoText = styled.img`
     margin-top: 16px;
 `
 export const TextTopo = styled.h1`
-    font-family: 'Space Grotesk';
+    font-family: 'Roboto';
     font-style: normal;
     line-height: 26px;
     text-align: center;
-    width: 546px;
-    height: 52px;
+    width: 350px;
+    height: auto;
     text-align: center;
+    padding: 2px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     align-items: flex-start;
     @media (max-width: 576px){
         font-size: 15px;
     }
 `
 export const TextDescription = styled.h1`
-    font-family: 'Space Grotesk';
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
@@ -45,4 +47,12 @@ export const TextDescription = styled.h1`
     text-transform: uppercase;
     color: #555761;
     margin: 16px;
+    margin-top: 35px;
+    margin-left: 20px;
+`
+
+export const Text = styled.h1`
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 29px;
 `

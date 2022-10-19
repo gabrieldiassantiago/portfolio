@@ -1,26 +1,35 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "include": [
-    "src"
-  ]
+	"compilerOptions": {
+		"strict": false,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"types": ["node", "jest"],
+		"newLine": "LF",
+		"outDir": "lib",
+		"target": "es2017",
+		"sourceMap": true,
+		"declaration": true,
+		"jsx": "preserve",
+		"lib": [
+			"es2017",
+			"dom"
+		],
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "experimentalDecorators": true,
+		"baseUrl": "./src",
+		"paths": {
+            "@client/*": ["./client/*"],
+            "@server/*": ["./server/*"]
+		}
+	},
+	"include": [
+		"**/*.ts"
+	],
+	"exclude": [
+		".git",
+		"node_modules"
+	]
 }
