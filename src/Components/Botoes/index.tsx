@@ -8,7 +8,6 @@ function Button () {
     return (
         <div>
         <Container>
-            <h2>teste</h2>
         <Botao href="https://www.facebook.com/gabrieldiassantiago09/"> 
         <Icon />
         <FaFacebookF/>Facebook<Arrow src={arrow}/>
