@@ -13,6 +13,7 @@ function obterhora  ()  {
   if (h <= 5) return 'Boa madrugada'
   if (h < 12) return 'Bom dia'
   if (h >= 18) return 'Boa noite'
+  console.log(obterhora)
 }
 
 
