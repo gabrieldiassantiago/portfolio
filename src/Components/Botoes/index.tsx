@@ -16,7 +16,7 @@ function Button () {
         <Icon />
         <FaInstagram/>Instagram<Arrow src={arrow}/>
         </Botao>
-        <Botao href="https://whatsapp.com">
+        <Botao href="wa.me/5512991663075">
         <Icon />
         <FaWhatsapp />WhatsApp <Arrow src={arrow} />
         </Botao>
